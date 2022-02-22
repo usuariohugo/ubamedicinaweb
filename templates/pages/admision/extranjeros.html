@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+<!--titulo de pagina-->
+{% block title %}
+  <title>Fmed | Extranjeros</title>
+{% endblock title %}
+
+ <!--barra de navegacion-->
+ {% block nabvar %}
+ {% include 'components/nabvar.html' %}
+ {% endblock nabvar %}
+
+ <!--contenido de la paginas url-->
+ {% block content %}
+  {% include 'components/extranjeros.html' %}
+ {% endblock content %}
+
+ <!--pie de la pagina-->
+ {% block footer %}
+  {% include 'components/footer.html' %}
+ {% endblock footer %}

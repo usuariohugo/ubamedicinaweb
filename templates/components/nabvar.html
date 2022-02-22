@@ -1,0 +1,94 @@
+{% load static %}
+
+<!-- ============================================-->
+      <!-- <section> begin ============================-->
+        <section class="bg-primary py-2 d-none d-sm-block">
+
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-auto d-none d-lg-block">
+                  <p class="my-2 fs--1"><i class="fas fa-map-marker-alt me-3"></i><span>Paraguay 2155, C1121 ABG, Buenos Aires </span></p>
+                </div>
+                <div class="col-auto ms-md-auto order-md-2 d-none d-sm-block">
+                  <ul class="list-unstyled list-inline my-2">
+                    <li class="list-inline-item"><a class="text-decoration-none" href="https://www.facebook.com/pages/Facultad-de-Medicina-UBA/105953039444349"><i class="fab fa-facebook-f text-900"></i></a></li>
+                    <li class="list-inline-item"><a class="text-decoration-none" href="https://ar.pinterest.com/search/pins/?q=facultad%20de%20medicina%20uba&rs=typed&term_meta[]=facultad%7Ctyped&term_meta[]=de%7Ctyped&term_meta[]=medicina%7Ctyped&term_meta[]=uba%7Ctyped"><i class="fab fa-pinterest text-900"></i></a></li>
+                    
+                    <li class="list-inline-item"><a class="text-decoration-none" href="https://www.instagram.com/cienciasmedicas.uba/?hl=es-la"><i class="fab fa-instagram text-900"> </i></a></li>
+                  </ul>
+                </div>
+                <div class="col-auto">
+                  <p class="my-2 fs--1"><i class="fas fa-envelope me-3"></i><a class="text-900" href="mailto:diradmision@fmed.uba.ar">diradmision@fmed.uba.ar</a></p>
+                </div>
+              </div>
+            </div>
+            <!-- end of .container-->
+    
+          </section>
+          <!-- <section> close ============================-->
+          <!-- ============================================-->
+    
+    
+          <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+            <div class="container"><a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'assets/img/gallery/UBALOGO.png' %}" height="37" alt="logo" /></a></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+              <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
+                  <li class="nav-item px-2"><a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a></li>
+                  
+                  <li class="nav-item dropdown px-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Admision
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="{% url 'carreras' %}">Carrera</a></li>
+                      <li><a class="dropdown-item" href="{% url 'estudiantes' %}">Estudiantes</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="{% url 'noticiaestudiantes' %}">Noticas Para Alumnos</a></li>
+                      <li><a class="dropdown-item" href="{% url 'ingresantes' %}">Ingresantes</a></li>
+                      <li><a class="dropdown-item" href="{% url 'extranjeros' %}">Extranjeros\as</a></li>
+                      <li><a class="dropdown-item" href="{% url 'extension' %}">Extension</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown px-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      La Facultad
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="{% url 'biblioteca' %}">Biblioteca</a></li>
+                      <li><a class="dropdown-item" href="{% url 'noticiassobrelafacultad' %}">Noticias</a></li>
+                      <li><a class="dropdown-item" href="{% url 'nuevosespacios' %}">Cecim</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="{% url 'museo' %}">Museo</a></li>
+                      <li><a class="dropdown-item" href="{% url 'departamentos' %}">Departamentos y Catedra</a></li>
+                      <li><a class="dropdown-item" href="{% url 'informacionsobrelafacultad' %}">Sobre el Establecimiento</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item px-2"><a class="nav-link active" aria-current="page" href="{% url 'docentes' %}">Docentes</a></li>
+                  
+                  
+                  <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="{% url 'contactos' %}">Contacto</a></li>
+                </ul><a class="btn btn-primary order-1 order-lg-0" href="{% url 'administracion' %}">Administracion</a>
+                <form class="d-flex my-3 d-block d-lg-none">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                  <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+                <div class="dropdown d-none d-lg-block">
+                  <button class="btn btn-outline-light ms-2" id="dropdownMenuButton1" type="submit" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-search text-800"></i></button>
+                  <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1" style="top:55px">
+                    <form>
+                      <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                    </form>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+
+
+
+
+          
+         
+    
